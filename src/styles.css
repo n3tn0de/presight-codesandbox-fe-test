@@ -1,0 +1,20 @@
+.wrapper {
+  max-width: 300px;
+  padding: 12px;
+}
+.App {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+.preview-cont {
+  height: 600px;
+  border: 3px dashed dodgerblue;
+}
+h3,
+h2,
+h4 {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 16px 0px;
+}

@@ -1,0 +1,32 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "frontend": {
+      "name": "Frontend",
+      "command": "pnpm frontend",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+    "backend": {
+      "name": "Backend",
+      "command": "pnpm backend",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["mock.mjs"]
+      },
+      "preview": {
+        "port": 3000
+      }
+    }
+  }
+}
