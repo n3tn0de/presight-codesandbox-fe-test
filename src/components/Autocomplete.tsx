@@ -9,8 +9,6 @@ const apiPort = 3000;
 const ITEMS_API_URL = `https://${getCodeSandboxHost(apiPort)}/api/countries`;
 const DEBOUNCE_DELAY = 500;
 
-console.log({ ITEMS_API_URL });
-
 const Autocomplete: React.FC = () => {
   return (
     <div className="wrapper">
